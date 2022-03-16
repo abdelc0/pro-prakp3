@@ -19,9 +19,10 @@
           </a>
           <div class="navbar-links">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="informatie.html">Archief</a></li>
-              <li><a href="http://www.utrechtpizza.com/" target="blank">Contact</a></li>
+              <li><a href="index.php">Home</a></li>
+              <li><a href="Archief.php">Archief</a></li>
+              <li><a href="news.php">new news</a></li>
+              <li><a href="read.php">read</a></li>
               <li><a onclick="document.getElementById('login-modal').style.display = 'flex';">Login</a></li>
             </ul>
           </div>
@@ -36,136 +37,314 @@
             <!-- nav bar -->
 
             <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
 
-    <div class="content-wrapper">
-  
-        <div class="news-card">
-          <a href="cardnews1.html" class="news-card__card-link"></a>
-          <img src="./img/288x216a.jpg" alt="" class="news-card__image">
-          <div class="news-card__text-wrapper">
-            <h2 class="news-card__title">Tegenvaller FC Utrecht: seizoen spits Veerman lijkt voorbij door enkelblessure</h2>
-            <div class="news-card__post-date">Jan 29, 2018</div>
-            <div class="news-card__details-wrapper">
-              <p class="news-card__excerpt">FC Utrecht moet het de komende maanden doen zonder spits Henk Veerman. De 31-jarige Volendammer heeft aan de uitwedstrijd tegen Go Ahead Eagles van afgelopen weekend (1-1) een enkelblessure overgehouden.&hellip;</p>
-              <a href="cardnews1.html" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="news-card">
-          <a href="#" class="news-card__card-link"></a>
-          <img src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
-          <div class="news-card__text-wrapper">
-            <h2 class="news-card__title">Amazing Second Title that is Quite Long</h2>
-            <div class="news-card__post-date">Jan 29, 2018</div>
-            <div class="news-card__details-wrapper">
-              <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam obcaecati ex natus nulla rem sequi laborum quod fugit&hellip;</p>
-              <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="news-card">
-          <a href="#" class="news-card__card-link"></a>
-          <img src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="news-card__image">
-          <div class="news-card__text-wrapper">
-            <h2 class="news-card__title">Amazing Title</h2>
-            <div class="news-card__post-date">Jan 29, 2018</div>
-            <div class="news-card__details-wrapper">
-              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae&hellip;</p>
-              <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-            </div>
-          </div>
-        </div>
+            <?php
+$servername = "localhost";
+$username = "be_p3";
+$password = "d2ZJew1Tuq5c9ZuG";
+$dbname = "voetbal_be";
 
-        <div class="news-card">
-            <a href="#" class="news-card__card-link"></a>
-            <img src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
-            <div class="news-card__text-wrapper">
-              <h2 class="news-card__title">Amazing First Title</h2>
-              <div class="news-card__post-date">Jan 29, 2018</div>
-              <div class="news-card__details-wrapper">
-                <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
-                <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-              </div>
-            </div>
-          </div>
-        
-          <div class="news-card">
-            <a href="#" class="news-card__card-link"></a>
-            <img src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
-            <div class="news-card__text-wrapper">
-              <h2 class="news-card__title">Amazing Second Title that is Quite Long</h2>
-              <div class="news-card__post-date">Jan 29, 2018</div>
-              <div class="news-card__details-wrapper">
-                <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam obcaecati ex natus nulla rem sequi laborum quod fugit&hellip;</p>
-                <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-              </div>
-            </div>
-          </div>
-        
-          <div class="news-card">
-            <a href="#" class="news-card__card-link"></a>
-            <img src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="news-card__image">
-            <div class="news-card__text-wrapper">
-              <h2 class="news-card__title">Amazing Title</h2>
-              <div class="news-card__post-date">Jan 29, 2018</div>
-              <div class="news-card__details-wrapper">
-                <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae&hellip;</p>
-                <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-              </div>
-            </div>
-          </div>
-      
-        <div class="news-card">
-          <a href="#" class="news-card__card-link"></a>
-          <img src="https://images.pexels.com/photos/248486/pexels-photo-248486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
-          <div class="news-card__text-wrapper">
-            <h2 class="news-card__title">Amazing Forth Title that is Quite Long</h2>
-            <div class="news-card__post-date">Jan 29, 2018</div>
-            <div class="news-card__details-wrapper">
-              <p class="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
-              <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="news-card">
-          <a href="#" class="news-card__card-link"></a>
-          <img src="https://images.pexels.com/photos/206660/pexels-photo-206660.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
-          <div class="news-card__text-wrapper">
-            <h2 class="news-card__title">Amazing Fifth Title</h2>
-            <div class="news-card__post-date">Jan 29, 2018</div>
-            <div class="news-card__details-wrapper">
-              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio&hellip;</p>
-              <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-            </div>
-          </div>
-        </div>
-      
-        <div class="news-card">
-          <a href="#" class="news-card__card-link"></a>
-          <img src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="news-card__image">
-          <div class="news-card__text-wrapper">
-            <h2 class="news-card__title">Amazing 6<sup>th</sup> Title</h2>
-            <div class="news-card__post-date">Jan 29, 2018</div>
-            <div class="news-card__details-wrapper">
-              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia.</p>
-              <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
-            </div>
-          </div>
-        </div>
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+// $sql = "SELECT id, kleintext, hoodtext FROM texttest ";
+// $result = $conn->query($sql);
+// if ($result->num_rows > 0) {
+//     // output data of each row
+//     while($row = $result->fetch_assoc()) {
+//         echo "<br> id: ". $row["id"]. " - Name: ". $row["kleintext"]. " " . $row["hoodtext"] . "<br>";
+//     }
+// } else {
+//     echo "0 results";
+// }
+// $conn->close();
+//
+$sql = "SELECT * FROM texttest ORDER BY id DESC LIMIT 2";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+    echo '<div class="content-wrapper">';
+    while($row = $result->fetch_assoc()) {
 
+      
         
+      echo 
+    
+    
+      '
+
+      
+      <a class="no-decoration" href="index.php?home='. $row["id"] .'">
+      
+      <div class="news-card">
+      <a href="readmore.php?id='. $row["id"] .'" class="news-card__card-link"></a>
+      <img src="'. $row["img"] .'" alt="" class="news-card__image">
+      <div class="news-card__text-wrapper">
+        <h2 class="news-card__title"><b>'. $row["hoodtext"] .'</b></h2>
+        <div class="news-card__post-date">'. $row["news_edit_time"] .'</div>
+        <div class="news-card__details-wrapper">
+          <p class="news-card__excerpt">'. $row["kleintext"] .' </p>
+          <a href="readmore.php?id='. $row["id"] .'" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
       </div>
+      </div>
+      
+    
+      
+    
+      </a>  '
+    
+    ;
+      
+  } 
+  }
+
+$sql = "SELECT * FROM texttest ORDER BY id DESC LIMIT 9 offset 2";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+    echo '<div class="content-wrapper">';
+    
+    while($row = $result->fetch_assoc()) {
+        
+      echo 
+  
+    
+      '<!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+      </head>
+      <body>
+
+      
+      <a class="no-decoration" href="index.php?home='. $row["id"] .'">
+      
+      <div class="news-card">
+      <a href="readmore.php?id='. $row["id"] .'" class="news-card__card-link"></a>
+      <img src="'. $row["img"] .'" alt="" class="news-card__image">
+      <div class="news-card__text-wrapper">
+        <h2 class="news-card__title"><b>'. $row["hoodtext"] .'</b></h2>
+        <div class="news-card__post-date">'. $row[  "news_edit_time"] .'</div>
+        <div class="news-card__details-wrapper">
+          <p class="news-card__excerpt">'. $row["kleintext"] .' </p>
+          
+          <a href="readmore.php?id='. $row["id"] .'" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+      </div>
+      
+    
+      
+    
+      </a>  '
+    
+    ;
+      
+  } 
+  }
+  $conn->close();
+ ?>
+
+<?php
+include("connect_db.php");
+
+$sql = "SELECT * from `texttest`"; 
+$result = mysqli_query($conn, $sql);
+
+
+$rows = "";
+
+// echo $result; 
+
+while($record = mysqli_fetch_assoc($result)){
+    // var_dump($record);
+    $rows .="
+               
+                <a href= 'readmore.php?id={$record['id']}'>
+               update
+                </a>"
+                
+               
+                
+  
+            
+             ;
+             
+}
+
+
+?>
+    
+  
+    
+
+      <style>
+          * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+body {
+  background-color: #555;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.news-card {
+  border: 0px solid aqua;
+  margin: 0.5rem;
+  position: relative;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  flex: 1;
+  min-width: 290px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+@media (min-width: 900px) {
+
+.news-card {
+    height: 20rem
+}
+  }
+
+.news-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);;
+      z-index: 0;
+    }
+
+.news-card__card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+/*     background: rgba(255,0,0,.5); */
+  }
+
+.news-card__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    z-index: -1;
+  }
+
+.news-card__text-wrapper {
+    position: absolute;
+    bottom: 0rem;
+    padding: 1rem;
+    color: white;
+/*     background-color: rgba(0, 0, 0, 0.4); */
+    transition: background-color 1.5s ease;
+  }
+
+.news-card__title {
+    transition: color 1s ease;
+    margin-bottom: .5rem;
+  }
+
+.news-card__post-date {
+    font-size: .7rem;
+    margin-bottom: .5rem;
+    color: #CCC;
+  }
+
+.news-card__details-wrapper {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1.5s ease, opacity 1s ease;
+  }
+
+@media (min-width: 900px) {
+    .news-card:hover .news-card__details-wrapper {
+      max-height: 20rem;
+      opacity: 1;
+    }
+    .news-card:hover .news-card__text-wrapper {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .news-card:hover .news-card__title {
+      color: #00ffd5;
+    }
+    .news-card:hover .news-card__image {
+      transform: scale(1.2);
+      z-index: -1;
+    }
+  }
+
+.news-card__excerpt {
+    font-weight: 300;
+  }
+
+.news-card__read-more {
+    background: black;
+    color: #bbb;
+    display: block;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    border: 1px solid #444;
+    font-size: 0.8rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-decoration: none;
+    width: 7rem;
+    margin-left: auto;
+    position: relative;
+    z-index: 5;
+  }
+
+.news-card__read-more i {
+      position: relative; 
+      left: 0.2rem;
+      color: #888;
+      transition: left 0.5s ease, color 0.6s ease;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+.news-card__read-more:hover i {
+      left: 0.5rem;
+      color: yellow;
+    }
+
+      </style>
+</body>
+</html>
+
+
+    
       <div class="modal" id="login-modal" style="display:none;"> 
         <div class="container right-panel-active">
           <!-- Sign Up -->
