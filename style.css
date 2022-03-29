@@ -4,7 +4,7 @@ html, body {
     padding: 0;
     margin: 0;
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
     overflow-x: hidden;
   }
   
@@ -115,7 +115,7 @@ html, body {
     }
     
     body{
-        font-family: 'Raleway', sans-serif;
+        font-family:"Open Sans", Helvetica, Arial, sans-serif;
         background: #fff;
     }
     

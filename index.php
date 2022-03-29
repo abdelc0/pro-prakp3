@@ -39,17 +39,8 @@
             <!DOCTYPE html>
 
             <?php
-$servername = "localhost";
-$username = "be_p3";
-$password = "d2ZJew1Tuq5c9ZuG";
-$dbname = "voetbal_be";
+include("./connect_db.php");   
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 // $sql = "SELECT id, kleintext, hoodtext FROM texttest ";
 // $result = $conn->query($sql);
 // if ($result->num_rows > 0) {
@@ -188,7 +179,7 @@ while($record = mysqli_fetch_assoc($result)){
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans";
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -389,7 +380,9 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans";
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+  font-weight:300;
+	font-size: 12px;
 }
 
 body {
