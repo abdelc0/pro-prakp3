@@ -11,8 +11,6 @@
 
    
     <script src="script.js" type="text/javascript"></script>
-
-                <h1>archief</h1>    
      <!-- header -->
      <header>
         
@@ -45,8 +43,46 @@ if ($conn->connect_error) {
 // }
 // $conn->close();
 //
+$sql = "SELECT * FROM texttest ORDER BY id DESC LIMIT 2";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+    echo '<div class="content-wrapper">';
+    while($row = $result->fetch_assoc()) {
 
-$sql = "SELECT * FROM texttest ORDER BY id DESC limit 100 offset 11";
+      
+        
+      echo 
+    
+    
+      '
+
+      
+      <a class="no-decoration" href="index.php?home='. $row["id"] .'">
+      
+      <div class="news-card">
+      <a href="readmore.php?id='. $row["id"] .'" class="news-card__card-link"></a>
+      <img src="'. $row["img"] .'" alt="" class="news-card__image">
+      <div class="news-card__text-wrapper">
+        <h2 class="news-card__title"><b>'. $row["hoodtext"] .'</b></h2>
+        <div class="news-card__post-date">'. $row["news_edit_time"] .'</div>
+        <div class="news-card__details-wrapper">
+          <p class="news-card__excerpt">'. $row["kleintext"] .' </p>
+          <a href="readmore.php?id='. $row["id"] .'" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+      </div>
+      
+    
+      
+    
+      </a>  '
+    
+    ;
+      
+  } 
+  }
+
+$sql = "SELECT * FROM texttest ORDER BY id DESC LIMIT 9 offset 2";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     echo '<div class="content-wrapper">';
@@ -138,12 +174,6 @@ while($record = mysqli_fetch_assoc($result)){
 
 body {
   background-color: #555;
-}
-
-h1{
-    text-align: center;
-    color: whitesmoke;
-    padding: 3rem;
 }
 
 .content-wrapper {

@@ -38,13 +38,8 @@ while($record = mysqli_fetch_assoc($result)){
 }
 
 ?>
-    <style> a {
-                  color: whitesmoke;
-                  background-color: red;
-                  text-decoration: none;
-                  width: 35%;
-                  height: 30%;
-                }</style>
+    <style>
+                </style>
 <!doctype html>
 <html lang="en">
   <head>

@@ -13,25 +13,7 @@
     
 
 
-    <!-- Start Header -->
-    <header>
-      <nav class="navbar">
-        <div class="brand-title">soloshop</div>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="index.php">nieuweniews</a></li>
-            <li><a href="www.youtube.com">home</a></li>
-            <li><a href="test.php">activiteiten</a></li>
-            <li><a href="#">referenties</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+ 
       <h1>referenties</h1>
       <h1>vul hier onder je mening over utrecht pizza</h1>
      <div class="read"><a href="read.php">read</a></div>

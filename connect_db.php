@@ -1,14 +1,10 @@
+
 <?php
-$servername = "localhost";
-$username = "be_p3";
-$password = "d2ZJew1Tuq5c9ZuG";
-$dbname = "voetbal_be";
-$conn = mysqli_connect($servername,$username,$password,$dbname);
+define ("SERVERNAME","localhost");
+define("USERNAME","be_p3");
+define("PASSWORD","d2ZJew1Tuq5c9ZuG");
+define("DBName","voetbal_be");
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-  echo " ";
-  ?>
+$conn = mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DBName);
 
-
+?>  

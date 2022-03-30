@@ -1,0 +1,10 @@
+#footer{
+    min-height: 4em;
+    background-color: yellowgreen;
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+}
+body{
+    background-color: whitesmoke;
+}
