@@ -9,8 +9,10 @@ switch($alert){
     case"no-email":
         echo'<div class="alert">
         <span class="closebtn"">&times;</span> 
-        <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
-      </div>';
+        <strong>Danger!</strong> niks in gevuld ga terug.
+      
+    '
+      ;
         header("refresh:3; ./index.php?content=register");
     break;
 

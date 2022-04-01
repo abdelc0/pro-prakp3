@@ -33,8 +33,8 @@
         if (isset($_SESSION["id"])){
           switch($_SESSION["userrol"]){
             case'admin':
-              echo'<li><a href="./index.php?content=news">new news</a></li>
-              <li><a href="./index.php?content=read">read</a></li>';
+              echo'<li><a href="./index.php?content=admindashboard">admin</a></li>
+      ';
 
 
 

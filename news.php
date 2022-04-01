@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.01">
-    <title>utrecht pizza</title>
+    <title> </title>
     <!-- End Google fonts css -->
     <link href="script.js" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -13,9 +13,6 @@
     
 
 
- 
-      <h1>referenties</h1>
-      <h1>vul hier onder je mening over utrecht pizza</h1>
      <div class="read"><a href="read.php">read</a></div>
       <div class="container">
       <form action="creath.php" method="post">

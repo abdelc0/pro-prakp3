@@ -78,6 +78,7 @@ $sql = "SELECT * FROM texttest ORDER BY id DESC LIMIT 2";
       </a>  '
     
     ;
+    
       
   } 
   }
@@ -125,6 +126,7 @@ $sql = "SELECT * FROM texttest ORDER BY id DESC LIMIT 9 offset 2";
       </a>  '
     
     ;
+    
       
   } 
   }
@@ -160,6 +162,7 @@ while($record = mysqli_fetch_assoc($result)){
 
 
 ?>
+
     
   
     
