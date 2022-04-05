@@ -31,7 +31,7 @@
         <?php
         // var_dump($_SESSION);exit();
         if (isset($_SESSION["id"])){
-          switch($_SESSION["userrol"]){
+          switch($_SESSION["userrole"]){
             case'admin':
               echo'<li><a href="./index.php?content=admindashboard">admin</a></li>
       ';

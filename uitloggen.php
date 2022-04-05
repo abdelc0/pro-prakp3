@@ -1,7 +1,7 @@
 <?php
 
 unset($_SESSION["id"]);
-unset($_SESSION["userrol"]);
+unset($_SESSION["userrole"]);
 
 session_destroy();
 

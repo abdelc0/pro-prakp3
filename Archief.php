@@ -23,9 +23,9 @@
 
             <?php
 $servername = "localhost";
-$username = "be_p3";
-$password = "d2ZJew1Tuq5c9ZuG";
-$dbname = "voetbal_be";
+$username = "imran_m1";
+$password = "vxBMzpzH80TgN9rQ";
+$dbname = "anime_da";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

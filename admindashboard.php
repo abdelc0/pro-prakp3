@@ -1,9 +1,8 @@
 <div class="cards-list">
 <a href="./index.php?content=gebruikers"> 
 <div class="card 1">
-  <div class="card_image"> <img src="https://cdn.dribbble.com/users/398490/screenshots/1716348/users.gif" /> </div>
+  <div class="card_image"> <img src="./img/logogebruikers.png" /> </div>
   <div class="card_title title-white">
-    <p>gebruikers</p>
   </div>
 </div>
 
@@ -11,10 +10,9 @@
 <a href="./index.php?content=news"> 
   <div class="card 2">
   <div class="card_image">
-    <img src="https://c.tenor.com/MV8mvg7P7xAAAAAC/breaking-news-news.gif" />
+    <img src="./img/logonews.png" />
     </div>
   <div class="card_title title-white">
-    <p>news</p>
   </div>
 </div>
 </a>
@@ -26,7 +24,7 @@
 <div class="card 3">
 
   <div class="card_image">
-    <img src="https://images.squarespace-cdn.com/content/v1/5478b899e4b0a1e9ef843bef/1489711468608-16865QR1K0JIKALFSG1C/EDIT_LOGOANIM.gif?format=2500w" />
+    <img src="./img/logoedit.png" />
   </div>
   <div class="card_title">
   
@@ -37,14 +35,6 @@
 </div>
 </a>
   
-  <div class="card 4">
-  <div class="card_image">
-    <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
-    </div>
-  <div class="card_title title-black">
-    <p>Card Title</p>
-  </div>
-  </div>
 
 </div>
 <style>.cards-list {

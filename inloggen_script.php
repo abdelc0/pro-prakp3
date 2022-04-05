@@ -1,6 +1,6 @@
 
 <?php
-var_dump($_POST);
+// var_dump($_POST);
 include("./connect_db.php");
 include("./functions.php");
 $email = sanitize($_POST["email"]);
@@ -37,11 +37,11 @@ if (empty($email) || empty($password)) {
 
 
                                         $_SESSION["id"] = $record["id"];
-                                        $_SESSION["userrol"] = $record["userrol"];
+                                        $_SESSION["userrole"] = $record["userrole"];
                                         
                                         // var_dump($_SESSION);exit();
 
-                                        switch($record["userrol"]){
+                                        switch($record["userrole"]){
                                             case 'customer':
                                              header("Location: ./index.php?content=c-home");
                                              break;
