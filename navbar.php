@@ -55,7 +55,8 @@
 
             break;
             case 'customer':
-            echo'  <li><a href="./index.php?content=Archief">Archief</a></li>';
+            echo'  <li><a href="./index.php?content=Archief">Archief</a></li>
+            <li><a href="./index.php?content=c-home">custumor visit</a></li>';
 
 
             break;

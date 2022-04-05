@@ -32,7 +32,7 @@ $stmt->bind_param('ssss', $kleintext, $hoodtext,$img,$readmore);
 $result = $stmt->execute();
 
 if($result){
-    header("location: ./news.php");  
+    header("location: index.php?content=news");  
 }
 
 ?>

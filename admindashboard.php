@@ -70,7 +70,6 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 a{
     text-decoration: none;
     color:red;
-    padding: 30px;
 }
 .card .card_title {
   text-align: center;
