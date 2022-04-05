@@ -17,7 +17,7 @@ while($record = mysqli_fetch_assoc($result)){
 
                 <td>{$record['password']}</td>
                
-                <td>{$record['userrole']}</td>
+                <td>{$record['userrol']}</td>
                 <td>{$record['activated']}</td>
                 <td>
                 <a href= 'updategebruikers.php?id={$record['id']}'>
@@ -25,7 +25,7 @@ while($record = mysqli_fetch_assoc($result)){
                 </a>
                 
                 <td>
-                <a href= 'delete.php?id={$record['id']}'>
+                <a href= 'deletegebruikers.php?id={$record['id']}'>
                delete
                 </a>
             
@@ -72,7 +72,7 @@ while($record = mysqli_fetch_assoc($result)){
             <th>email</th>
             <th>password</th>
            
-            <th>userrole</th>
+            <th>userrol</th>
             <th>activated</th>
             <th>update</th>
             <th>delete</th>

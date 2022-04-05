@@ -6,7 +6,7 @@ $id = $_GET["id"];
 
 $sql="DELETE FROM `register` WHERE `id` = $id";
 mysqli_query($conn,$sql); 
-header("location: ./read.php");           
+header("location: ./gebruikers.php");           
 
 
 ?>

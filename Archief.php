@@ -22,11 +22,7 @@
             <!DOCTYPE html>
 
             <?php
-$servername = "localhost";
-$username = "imran_m1";
-$password = "vxBMzpzH80TgN9rQ";
-$dbname = "anime_da";
-
+include("connect_db.php");
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
