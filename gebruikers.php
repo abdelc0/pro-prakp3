@@ -20,7 +20,7 @@ while($record = mysqli_fetch_assoc($result)){
                 <td>{$record['userrole']}</td>
                 <td>{$record['activated']}</td>
                 <td>
-                <a href= 'update.php?id={$record['id']}'>
+                <a href= 'updategebruikers.php?id={$record['id']}'>
                update
                 </a>
                 

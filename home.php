@@ -177,6 +177,8 @@ while($record = mysqli_fetch_assoc($result)){
 
 body {
   background-color: #555;
+  margin: 0;
+  padding: 0;
 }
 
 .content-wrapper {

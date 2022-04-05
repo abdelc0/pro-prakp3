@@ -49,7 +49,7 @@ if (empty($email) || empty($password)) {
                                                 header("Location: ./index.php?content=r-home");
                                                 break;
                                              case 'admin':
-                                            header("Location: ./index.php?content=a-home");
+                                            header("Location: ./index.php?content=admindashboard");
                                             break;
                                             
                                             case 'moderator':
