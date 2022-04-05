@@ -17,7 +17,7 @@
           <div class="navbar-links">
             <ul>
               <li><a href="./index.php?content=home">Home</a></li>
-              <li><a href="./index.php?content=Archief">Archief</a></li>
+            
            
           
               
@@ -33,7 +33,9 @@
         if (isset($_SESSION["id"])){
           switch($_SESSION["userrol"]){
             case'admin':
-              echo'<li><a href="./index.php?content=admindashboard">admin</a></li>
+              echo'<li><a href="./index.php?content=Archief">Archief</a></li>
+              <li><a href="./index.php?content=admindashboard">admin</a></li>
+              
       ';
 
 
@@ -47,9 +49,13 @@
 
             break;
             case 'moderator':
+              echo' <li><a href="./index.php?content=Archief">Archief</a></li>
+              <li><a href="./index.php?content=m-home">writer</a></li>';
+             
 
             break;
             case 'customer':
+            echo'  <li><a href="./index.php?content=Archief">Archief</a></li>';
 
 
             break;

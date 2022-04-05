@@ -86,11 +86,11 @@ if (empty($_POST["email"])) {
                 <h3>'.$d.' -'.$t.'</h3>
                 <h2>Beste Gebruiker,</h2>
                 <p>U heeft zich onlangs geregistreerd voor de site son.nl</p>
-                <p>Klik <a href ="http://test.nl/index.php?content=activate&id=' . $id . '&pwh=' . $password_hash . '">hier</a> voor het activeren en wijzigen van het wachtwoord van uw account</p>
+                <p>Klik <a href ="index.php?content=activate&id=' . $id . '&pwh=' . $password_hash . '">hier</a> voor het activeren en wijzigen van het wachtwoord van uw account</p>
                 <p>Met vriendelijke groet,</p>
                 <p>A. charai</p>
                 <p>CE0 SON INC.</p>
-
+               
                 
 
 
